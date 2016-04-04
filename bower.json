@@ -1,0 +1,19 @@
+{
+  "name": "grunt_test",
+  "authors": [
+    "Paul.ockleford@nhs.net"
+  ],
+  "description": "Testing out Grunt with bower",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
