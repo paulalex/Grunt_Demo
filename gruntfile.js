@@ -9,7 +9,7 @@ module.exports = function (grunt) {
       			dist: './dist/'
     		},
 		clean: {
-			buildx: ['<%= appPaths.dist %>', './.tmp'],
+			buildx: ['<%= appPaths.app %>/vendor', '<%= appPaths.dist %>', './.tmp'],
 		},
 		useminPrepare: {
       			html: ['<%= appPaths.app %>/**/*.html'],
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 				strict: "global",
 				browser: true
 			},
-			files: ['<%= appPaths.app %>/js/**/*.js', '!<%= appPaths.app %>/js/bower_components/**/*.js']
+			files: ['<%= appPaths.app %>/js/**/*.js', '!<%= appPaths.app %>/vendor/bower_components/**/*.js']
 		},		
 		htmlhint: {
 			templates: {
